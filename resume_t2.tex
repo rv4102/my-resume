@@ -17,6 +17,7 @@
 \usepackage[pdftex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{multicol}
+\usepackage{fontawesome5}
 
 \hypersetup{
     colorlinks=true,
@@ -91,8 +92,8 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Rushil Venkateswar}} & Email:~~\href{mailto:rushilv14@gmail.com}{rushilv14@gmail.com}\\
   & Mobile:~~+91-8789-309-659 \\
-  & Github:~~\href{https://github.com/rv4102/}{https://github.com/rv4102/} \\
-  & Website:~~\href{https://cse.iitkgp.ac.in/~rushilv/}{https://cse.iitkgp.ac.in/~rushilv/} \\
+  & Github:~~\url{https://github.com/rv4102/} \\
+  & Website:~~\url{https://cse.iitkgp.ac.in/~rushilv/} \\
 \end{tabular*}
 
 %-----------SUMMARY-----------------
@@ -104,7 +105,6 @@
 %     \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
-
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -125,115 +125,77 @@
 %-----------PROJECTS-----------------
 \vspace{0pt}
 \section{Projects}
-    \resumeSubHeadingListStart
-    \resumeSubheading{Supermarket Automation System (\textit{CS29202})}{}
-    {Front-end: HTML, CSS, Javascript \hspace{4mm} Backend: Python (Django) \hspace{4mm} Database: SQLite3}{March 2022}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Students' Auditorium Management System (\textit{CS29202: Software Engineering})}{\href{https://github.com/rv4102/AudiBooking}{\faGithub}}
+    {Front-end: HTML, CSS, Javascript \hspace{4mm} Backend: Flask \hspace{4mm} Database: SQLite}{Spring 2022}
     \resumeItemListStart
-        \resumeItem\textmd{Automation Software for a Supermarket with role-based permission and authentication (Manager, Employee, Clerk)}
-        \resumeItem\textmd{Generate bill at the end of every sales transaction with all transaction-details, bill split-up, and net payable amount}
-        \resumeItem\textmd{Maintain the inventory of all the items in-stock by adding new products and updating stock-quantity (employee-only)}
-        \resumeItem\textmd{Print Sales statistics with any particular day or particular period, indication quantity sold and profit (manager-only)}
+      \resumeItem\textmd{An \textbf{auditorium management website} which runs on Localhost (127.0.0.1) and allows the user to maintain a database of shows to be screened along with providing functionality for seat booking.}
+      \resumeItem\textmd{\textbf{OTP-based login} for users of the software is supported.}
     \resumeItemListEnd
 
    
-    \resumeSubheading{RISC: Reduced Instruction Set Computer (\textit{CS39001})}{}
-    {Tech: Verilog (HDL), AMD Xilinx, Nexys Video Artix-7 FPGA}{Sept - Nov 2022}
+    \resumeSubheading{KGP-miniRISC Processor (\textit{CS39001: Computer Organisation \& Architecture})}{\href{https://github.com/rv4102/CompOrg-Lab/tree/main/A6_KGP_miniRISC_Processor}{\faGithub}}
+    {Tech: Verilog (HDL), AMD Xilinx ISE, Nexys Artix-7 FPGA}{Autumn 2022}
     \resumeItemListStart
-        \resumeItem\textmd{Designed the KGP-miniRISC processor with an Instruction Set Architecture (ISA), consisting of 32 bit word}
-        \resumeItem\textmd{All the registers and memory elements having 32 bit data. The address line of the memory is also 32 bits}
-        \resumeItem\textmd{For a single cycle implementation of the controller, there is no state and the design is purely combinational}
-        \resumeItem\textmd{While deciding the op-code, we made provisions for adding more instructions to the ISA}
+      \resumeItem\textmd{Developed a 32-bit word length \textbf{single-cycle} instruction execution unit. Hence there is no state and the design is purely combinational.}
+      \resumeItem\textmd{Successfully dumped the bitstream onto a \textbf{Nexys A7 FPGA board} using Xilinx ISE and ran programs (written in assembly) such as sorting and linear search.}
+      \resumeItem\textmd{Clock frequency determined by the single longest instruction in the given ISA.}
     \resumeItemListEnd
 
    
-    \resumeSubheading{tinyC Compiler \textit{(CS39003)}}{}
-    {Tech: Flex, Bison, SymbolTable, QuadArray, TheeAddressCode Generator}{Sept - Nov 2022}
+    \resumeSubheading{tinyC Compiler \textit{(CS39003: Compilers)}}{\href{https://github.com/rv4102/Compilers-Lab}{\faGithub}}
+    {Tech: Flex, Bison}{Autumn 2022}
     \resumeItemListStart
-        \resumeItem\textmd{Created library for standard input-output operations and followed International Standard ISO/IEC 9899:1999 (E).}
-        \resumeItem\textmd{Defined flex specifications for the language of tinyC using the Phase Structure Grammar given in the C Standard.}
-        \resumeItem\textmd{Used Bison specifications to define the tokens of tinyC and write the semantic actions in Bison to translate a tinyC program into an array of 3-address quad’s, a supporting symbol table, and other auxiliary data structures.}
-        \resumeItem\textmd{Developed target code translator to generate the assembly language of x86-64  from the Three-Address-Code quad array.}
+      \resumeItem\textmd{Created library for standard input-output operations and followed International Standard ISO/IEC 9899:1999 (E).}
+      \resumeItem\textmd{Defined flex specifications for the language of tinyC using the Phase Structure Grammar given in the C Standard.}
+      \resumeItem\textmd{Used Bison specifications to define the tokens of tinyC and write the semantic actions in Bison to translate a tinyC program into an array of 3-address quad’s, a supporting symbol table, and other auxiliary data structures.}
+      \resumeItem\textmd{Developed target code translator to generate the assembly language of x86-64  from the Three-Address-Code quad array.}
     \resumeItemListEnd
    
-    % \resumeSubheading{Few-shot Cross-lingual Event Detection for low-resource languages}{}
-    % {Tech: Python, Pytorch, Multilingual BERT model, HuggingFace transformer framework.}{Nov 2021 - May 2022}
-    % \resumeItemListStart
-    %     \resumeItem\textmd{Used multilingual BERT for few-shot cross-lingual Event trigger detection task.}
-    %     \resumeItem\textmd{Evaluated our model using F1 score, for each language (Hindi, English, Marathi, Tamil, Telugu).}
-    % \resumeItemListEnd
-   
-    % \resumeSubheading{Instance Segmentation and Detection (\textit{CS29202})}{}
-    % {Python Libraries: MaskRCNN (Pytorch), PIL, Tkinter}{February 2022}
-    % \resumeItemListStart
-    %     \resumeItem\textmd{Used pre-trained MaskRCNN model to detect masks and bounding boxes of 3 most-prominent objects in any image}
-    %     \resumeItem\textmd{Created a GUI using Tkinter for user to select the image and get the segmentation mask or the bounding boxes}
-    % \resumeItemListEnd
-   
-    % \resumeSubheading{Inventory Management Software (\textit{CS29202})}{}
-    % {Tech: Object Oriented Programming in Java}{January 2022}
-    % \resumeItemListStart
-    %     \resumeItem\textmd{Designed and implemented a Java program in object oriented paradigm, with command-line interface.}
-    %     \resumeItem\textmd{Created required functionalities for all the entities (manufacturer, customer, product, warehouses, delivery agent).}
-    % \resumeItemListEnd
-   
-\resumeSubHeadingListEnd
+    \resumeSubheading{Instance Segmentation and Detection (\textit{CS29202: Software Engineering})}{\href{https://github.com/rv4102/CS29202-Codes/tree/main/A4}{\faGithub}}
+    {Tech: MaskRCNN (Pytorch), PIL, Tkinter}{Spring 2022}
+    \resumeItemListStart
+      \resumeItem\textmd{Developed a \textbf{Tkinter based GUI} to display bounding boxes or segmentation masks for the image selected.}
+      \resumeItem\textmd{Used a pre-trained MaskRCNN model from Pytorch library to generate \textbf{masks} and \textbf{bounding boxes} for a given image and used \textbf{matplotlib} to plot them.}
+      \resumeItem\textmd{Created a \textbf{python package} from source code.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 
-%-----------EXPERIANCE---------------
+%-----------EXPERIENCE---------------
 \vspace{0pt}
 \section{Experience}
   \resumeSubHeadingListStart
-    % \resumeSubheading{Upcoming SDE Intern}{Hyderabad, India}
-    % {Engineering Development Group (EDG), MathWorks India Private Limited}{May 2023 - July 2023}
-    \resumeSubheading{Research Intern | Prof. Pawan Goyal, IIT Kharagpur}{Kharagpur, India}
-    {Topic: Few-shot Cross-lingual Event Detection for low-resource languages}{Dec 2021 - May 2022}
+    \resumeSubheading{Research Intern | Prof. Partha Pratim Das, IIT Kharagpur}{Kharagpur, India}
+    {Topic: Development of a Python Tutor}{May 2022 - July 2022}
     \resumeItemListStart
-        \resumeItem\textmd{Tech: Python, Pytorch, Multilingual BERT model, HuggingFace transformer framework}
-        \resumeItem\textmd{Used multilingual BERT for few-shot cross-lingual Event trigger detection task}
-        \resumeItem\textmd{Evaluated our model using F1 score, for each language (Hindi, English, Marathi, Tamil, Telugu)}
-      \resumeItemListEnd
-   
-    % \resumeSubheading{Mathematics Expert}{}
-    % {KVPY Crash Course | CoachIO (www.coachio.in)}{Aug - Sept 2021}
-    % \resumeItemListStart
-    %     \resumeItem\textmd{Tutored and mentored \textbf{46} students for KVPY and JEE.}
-    %   \resumeItemListEnd
-   
-\resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-%\vspace{2pt}
-%\resumeSubItem{Panorama from Satellite Imagery using Distributed Computing (Distributed Computing, Image Processing)}{Images clicked using drones, provided by ISRO were stitched together using distributed public compute nodes, effectively bringing down processing time exponentially. Tech: PHP, C++, Java, Python (March '18)}
-%\vspace{2pt}
-%\resumeSubItem{Drag-n-drop machine learning learning environment %(Web Development, Machine Learning)}{Scratch like tool for implementing machine learning pipelines along with built in tutorial for each concept. Tech: Python, JavaScript (September '18)}
-%\vspace{2pt}
-%\resumeSubItem{Search Engine and Social Network(Web Development, Web Crawler, Search)}{Created from scratch a social network and a search engine based on the idea of integrating Facebook and Google. The launched website was among top 1000 websites in India during 2012-2013. Tech: PHP, MySQL, HTML, CSS, WebSockets, JavaScript, RSS, XML ( May '12)}
-\resumeSubHeadingListEnd
+      \resumeItem\textmd{Tech: Python}
+      \resumeItem\textmd{Used Protégé for making an ontology for Python language. Explored OWLReady python package to create ontologies.}
+      \resumeItem\textmd{Implemented Frequent Itemset Mining and used it to perform query expansion.}
+    \resumeItemListEnd
+    
+    \resumeSubheading{Research Intern | Dr. Debasish Chakraborty, ISRO}{Kharagpur, India}
+    {Topic: Semantic Segmentation of Remote Sensing Images \href{https://github.com/rv4102/qnet.git}{\faGithub}}{April 2022 - December 2022}
+    \resumeItemListStart
+      \resumeItem\textmd{Tech: Python, TensorFlow, Keras, OpenCV}
+      \resumeItem\textmd{Studied existing literature on CNNs, deep learning and their usage in the remote sensing context.}
+      \resumeItem\textmd{Using the Tensorflow framework, built a U-Net like model with improved performance and a fraction of the number of parameters as the original U-Net.}
+      \resumeItem\textmd{Created various other scripts to perform inference on variable sized images. Tested on Indian context images taken from Google Earth.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 \vspace{-5pt}
 
 \section{Coursework}
-% \vspace{-10pt}
-% \begin{multicols}{2}
-%     \begin{itemize}[itemsep=0pt]
-%         \item CS21202: Algorithms-1 \& Lab
-%         \item CS29206: Systems Programming Lab
-%         \item CS21204: Formal Language and Automata Theory
-%         \item CS21202: Switching Circuits and Logic Design
-%         \item CS20202: Software Engineering \& Labx
-%         \item CS21201: Discrete Structures
-%         \item HS30033: Econometric Analysis
-%         \item MA20205: Probability and Statistics
-%     \end{itemize}
-%     \end{multicols}
 \begin{description}[font=$\bullet$]
-\item {\textbf{Computer Science (Theory+Lab):} Algorithms-I, Software Engineering, Systems Programming, Compilers, Computer Architecture and Organization, Machine Learning, Algorithms-II, Programming \& Data Structures}
-\vspace{-3pt}
-\item {\textbf{Mathematics:} Discrete Structures, Advanced Calculus, Linear Algebra, Numerical and Complex Analysis, Probability and Statistics, Econometric Analysis, Linear Algebra for AI and ML}
-\vspace{-3pt}
-\item {\textbf{Ongoing Courses:} Deep Learning, Database Management and Systems, Operating Systems, Computer Networks}
-% \vspace{-3pt}
-% \item {\textbf{Finance and Statistics:} Probability and Statistics, Econometric Analysis, Rural Infra. Dev. and Management.}
-
+  \item {\textbf{Computer Science (Theory+Lab):} Algorithms-I, Software Engineering, Systems Programming, Compilers, Computer Architecture and Organization, Machine Learning, Algorithms-II, Programming \& Data Structures}
+  \vspace{-3pt}
+  \item {\textbf{Mathematics:} Discrete Structures, Advanced Calculus, Linear Algebra, Numerical and Complex Analysis, Probability and Statistics, Econometric Analysis, Statistical Inference}
+  \vspace{-3pt}
+  \item {\textbf{MOOCs:} Machine Learning \textbf{(Andrew Ng)}, Deep Learning Specialization \textbf{(DeepLearning.AI)}}
+  % \vspace{-3pt}
+  % \item {\textbf{Ongoing Courses:} Deep Learning, Database Management and Systems, Operating Systems, Computer Networks}
+  % \vspace{-3pt}
+  % \item {\textbf{Finance and Statistics:} Probability and Statistics, Econometric Analysis, Rural Infra. Dev. and Management.}
 \end{description}
 
 
@@ -246,10 +208,9 @@
 
 \section{Skills Summary}
 \resumeSubHeadingListStart
-\resumeSubItem{Languages fluent in:}{~C, C++, Python, Bash (Shell Programming).}
-\resumeSubItem{Languages familiar:}{~Java, Awk, MySQL, HTML5, CSS3, Javascript, LaTeX.}
-\resumeSubItem{Libraries and Frameworks:}{~STL(C++), NumPy, Pandas, Tkinter, PIL, Pytorch, json, Django.}
-\resumeSubItem{Platforms \& Tools:}{~Linux, Windows, MacOS, FreeCAD, MS-Excel.}
+  \resumeSubItem{Languages: }{C, C++, Python, MySQL, LaTeX, MATLAB, MIPS Verilog, Bash.}
+  \resumeSubItem{Libraries and Frameworks:}{~STL(C++), NumPy, Pandas, Tkinter, PIL, Pytorch, TensorFlow.}
+  \resumeSubItem{Platforms \& Tools:}{~Linux, macOS, Git, Jupyter Notebook.}
 \resumeSubHeadingListEnd
 
 \vspace{0pt}
@@ -257,13 +218,21 @@
 %-----------Awards-----------------
 \section{Honors and Awards}
 \begin{description}[font=$\bullet$]
-\item {\textbf{VIJYOSHI Science Camp} participant | \emph{IISER, Kolkata} - Dec 2019 }
-\vspace{-3pt}
-\item {\textbf{KVPY Scholar} | \emph{IISc, Bangalore} - 2019 }
-\vspace{-3pt}
-\item {\textbf{MTRP} participant | \emph{ISI, Kolkata} - Feb 2019}
-\vspace{-3pt}
-\item {\textbf{NTSE} fellowship awardee | \emph{NCERT, New Delhi} - 2018}
+  \item {\textbf{All India Rank 473} among 160k candidates | \emph{JEE Advanced} - Sept 2020 }
+  \vspace{-3pt}
+  \item {\textbf{All India Rank 1176} among 1.12 million candidates | \emph{JEE Mains} - Jan 2020 }
+  \vspace{-3pt}
+  \item {\textbf{KVPY} Round 1 qualified | \emph{IISER, Kolkata} - 2019 }
+  \vspace{-3pt}
+  \item {\textbf{Inter IIT Tech Meet 11.0} Solo Gold Medalist | \emph{IIT, Kanpur} - Feb 2023}
+  \vspace{-3pt}
+  \item {\textbf{Optiver Winter School} participant | \emph{IIT, Delhi} - Jan 2023} % one of 300 selected from 3000 IITians
+  \vspace{-3pt}
+  \item {\textbf{ACM ICPC Preliminary Round} Rank 498 | \emph{IIT, Kharagpur} - 2022}
+  % \vspace{-3pt}
+  % \item {\textbf{National Science Day Quiz} First position | \emph{Gymkhana, IIT Kharagpur} - Feb 2021}
+  % \vspace{-3pt}
+  % \item {\textbf{Science of Paper Folding Quiz} Second position | \emph{Space Technology Students' Society, IIT Kharagpur} - Aug 2022}
 
 \end{description}
 
@@ -271,12 +240,14 @@
 \section{Position of Responsibility}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Departmental Representative | Placement Team}{}
-    {Career Development Centre, Indian Institute of Technology Kharagpur}{2022 - 2023}
-\resumeSubheading
-    {Secretary: Sports and Games}{}
-    {Lal Bahadur Shastri Hall of Residence, Indian Institute of Technology Kharagpur}{2021 - 2022}
-\resumeSubHeadingListEnd
+    {Associate Member}{}
+    {Business Club, Indian Institute of Technology Kharagpur}{Dec 2020 - Sept 2021}
+    \resumeItemListStart
+      \resumeItem\textmd{Authored a \textbf{Whitepaper on XGBoost} {\href{https://drive.google.com/file/d/1e6BMMkBewwBbj1vg58pLpTyw0jNMvRba/view?usp=sharing}{\faDropbox}}.}
+      \resumeItem\textmd{Conducted a webinar on Cryptocurrency with Dr. Akshat Shrivastava as the guest lecturer.}
+      \resumeItem\textmd{Participated in an intra-club case study competition and guided newly inducted teammates.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
 \vspace{5pt}
 
 % \vspace{0pt}
