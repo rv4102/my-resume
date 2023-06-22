@@ -1,0 +1,343 @@
+% -------------------------------------------------
+% Resume in Latex
+% Author : Rushil Venkateswar
+% License : MIT
+%-------------------------------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Rushil Venkateswar} % Your Name
+\newcommand{\course}{B.Tech. + M.Tech. - Computer Science and Engineering} % Your Course
+\newcommand{\roll}{20CS30045} % Your Roll No.
+\newcommand{\phone}{8789309659} % Your Phone Number
+\newcommand{\emaila}{rushilv14@gmail.com} %Email 1
+\newcommand{\emailb}{rushilv@kgpian.iitkgp.ac.in} %Email 2
+\newcommand{\github}{rv4102} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{rushilv4102} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+  \includegraphics[width=2cm,clip]{iitkgp_logo.png}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+  \begin{tabularx}{\linewidth}{L r}
+    \textbf{\LARGE \name}                       & +91-\phone                                                               \\
+    {Roll No.: \roll}                           & \href{mailto:\emaila}{\emaila}                                           \\
+    %   {} &  \href{mailto:\emailb}{\emailb}\\
+    % \course &  \href{https://github.com/\github}{Github} $|$ \href{\website}{Website}\\
+    \course                                     & \href{https://github.com/\github}{github.com/\github}                    \\
+    {Indian Institute Of Technology, Kharagpur} & \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+  \end{tabularx}
+}
+
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+    {\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+    \hline
+    \textbf{Degree/Certificate } & \textbf{Institute/Board}                  & \textbf{CGPA/Percentage} & \textbf{Year} \\
+    \hline
+    B.Tech. + M.Tech.            & Indian Institute of Technology, Kharagpur & 8.79 (Current)           & 2020-Present  \\
+    \hline
+    Senior Secondary             & Little Flower School, ISC Board           & 96.25\%                  & 2020          \\
+    \hline
+    Secondary                    & Little Flower School, ICSE Board          & 95.40\%                  & 2018          \\
+    \hline
+  \end{tabularx}}
+\vspace{-2mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Research Intern | Dr. Debasish Chakraborty, ISRO}{Kharagpur, India}
+{Semantic Segmentation of Remote Sensing Images \href{https://github.com/rv4102/qnet.git}{\faGithub}}{Apr. 2022 - Dec. 2022}
+\resumeItemListStart
+\item {Studied existing literature on CNNs, deep learning and their usage in the remote sensing context.}
+\item {Built a U-Net based model with Depth-wise Separable Convolutional layers which dramatically reduce the number of parameters and computation needed to obtain similar performance as a U-Net on LandCover.AI dataset.}
+\item {Scripts to perform inference on variable sized images from Google Earth were created.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Intern | Prof. Partha Pratim Das, IIT Kharagpur}{Kharagpur, India}
+{Development of a Python Tutor}{May. 2022 - Jul. 2022}
+\resumeItemListStart
+\item {Aided the development of a Python Ontology using \textbf{OWLReady2} and \textbf{Protégé}.}
+\item {Evaluated the validity of Python Onotlogy by implementing \textbf{n-gram matching} and \textbf{fuzzy matching} of onotology keywords with Code Intents available through Conala Corpus.}
+\item {Implemented \textbf{Frequent Itemset Mining} for Neural Query Expansion to be fed into a transformer architecture model for creating code snippets from corresponding code intents.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Hospital Management System (CS39202: Database Management Systems Lab)}
+{Keywords: Python Flask, Bootstrap}
+{Feb. 2023 - Mar. 2023}
+{\href{https://github.com/jatin0101/DBMS-Lab/tree/rushil/A4}{\faGithub}}
+\resumeItemListStart
+\item {Web application developed using \textbf{Python Flask} with support for user authentication, suitable access control, data security \& automated email scheduling. Frontend implemented using \textbf{Bootstrap} \& \textbf{Jinja} templates for form control.}
+\item {Support for variety of users such as Front Desk Operators (handle patient registration), Data Entry Operators (insert patient data), Doctors (upload patient diagnosis), and Admins (user management).}
+\resumeItemListEnd
+
+\resumeProject
+{The Chandrayaan Moon Mapping Challenge (ISRO, Inter IIT Tech Meet 11.0)}
+{Keywords: PyTorch, Convolutional Neural Networks, Generative Adversarial Networks}
+{Jan. 2023 - Feb. 2023}
+{\href{https://github.com/somnathjena2011/ISRO}{\faGithub}}
+\resumeItemListStart
+\item {Created a Lunar T-GAN Model with modified discriminators which focus on regions of interest like craters \& hills.}
+\item {Also worked on extraction of overlapping data between TMC-2 and OHRC images to be fed into pipeline of Real-ESRGAN \& HAT combined with other sharpening and denoising algorithms.}
+\resumeItemListEnd
+
+% \resumeProject
+% {KGP-miniRISC Processor (CS39001: Computer Organisation \& Architecture)}
+% {Keywords: Verilog (HDL)}
+% {Oct. 2022 - Nov. 2022}
+% {\href{https://github.com/rv4102/CompOrg-Lab/tree/main/A6_KGP_miniRISC_Processor}{\faGithub}}
+% \resumeItemListStart
+% \item {Developed a 32-bit word-length \textbf{single-cycle} instruction execution unit with a purely combinational design.}
+% \item {Successfully dumped the bitstream onto a \textbf{Nexys A7 FPGA board} using Xilinx ISE and ran programs (written in assembly) such as sorting and linear search.}
+% \resumeItemListEnd
+
+% \resumeProject
+%   {Students' Auditorium Management System (CS29202: Software Engineering)} %Project Name
+%   {Keywords: Bootstrap, Python Flask, SQLite3} %Project Name, Location Name
+%   {Spring 2022} %Event Dates
+%   {\href{https://github.com/rv4102/AudiBooking}{\faGithub}} %Website
+%   \resumeItemListStart
+%     \item {An \textbf{auditorium management website} which runs on localhost (127.0.0.1) and allows the user to maintain a database of shows to be screened, along with providing functionality for seat booking}
+%     \item {\textbf{OTP-based login} for users of the software is supported}
+%   \resumeItemListEnd
+
+% \resumeProject
+% {Instance Segmentation and Detection (CS29202: Software Engineering)}
+% {Keywords: Tkinter, PIL, setuptools}
+% {Feb. 2022}
+% {\href{https://github.com/rv4102/CS29202-Codes/tree/main/A4}{\faGithub}}
+% \resumeItemListStart
+%   \item {Developed a \textbf{Tkinter based GUI} to display bounding boxes or segmentation masks for the image selected.}
+%   \item {Used a pre-trained MaskRCNN model from Pytorch library to generate \textbf{masks} and \textbf{bounding boxes} for a given image and used \textbf{matplotlib} to plot them.}
+%   \item {Created a \textbf{python package} from source code.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+\section{Technical Skills}
+\resumeHeadingSkillStart
+\resumeSubItem{Programming} % Category
+{Python, C/C++, Bash Scripting, Verilog}
+\resumeSubItem{Tools/Frameworks} % Category
+{Keras, Tensorflow, Pytorch, Tkinter}
+%  \resumeSubItem{Operating Systems}
+%  {Windows, Linux*} 
+\hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
+\resumeHeadingSkillEnd
+
+
+\section{Coursework}
+\resumeHeadingSkillStart
+\resumeSubItem{Computer Science}
+{Programming \& Data Structures, Algorithms-I, Algorithms-II, Software Engineering, Systems Programming, Compilers, Computer Organisation \& Architecture, DBMS, Machine Learning}
+\resumeSubItem{Mathematics} % Category
+{Linear Algebra, Calculus, Discrete Structures, Probability \& Statistics, Statistical Inference}
+\resumeSubItem{MOOCs} % Category
+{Machine Learning \textbf{(Andrew Ng)}, Deep Learning Specialization \textbf{(DeepLearning.AI)}} % Skills
+\resumeHeadingSkillEnd
+
+
+\section{Positions of Responsibility}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Associate Member} % Position
+{Business Club, IIT Kharagpur} %Club,Event
+{Dec. 2020 - Sep. 2021} %Tenure Period
+\resumeItemListStart
+\item {Authored a \textbf{Whitepaper on XGBoost} {\href{https://drive.google.com/file/d/1e6BMMkBewwBbj1vg58pLpTyw0jNMvRba/view?usp=sharing}{\faDropbox}}.}
+\item {Conducted a webinar on Cryptocurrency with Dr. Akshat Shrivastava as the guest lecturer.}
+% \item {Participated in an intra-club case study competition and guided newly inducted teammates.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+\section{Achievements}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Solo Gold Medal} % Award
+{ Inter IIT Tech Meet 11.0 - IIT Kanpur, Kanpur} % Event
+{Feb. 2023} %Event Year
+% \resumePOR{Participant}
+% { Optiver Winter School - IIT Delhi, Delhi}
+% {Jan. 2023}
+% \resumePOR{Rank 498}
+%   { ACM ICPC Preliminary Round, ICPC, Kharagpur}
+%   {Nov. 2022}
+% \resumePOR{Second Position}
+%   { Science of Paper Folding, Space Technology Students' Society, IIT Kharagpur}
+%   {Aug. 2022}
+% \resumePOR{First Position}
+%   { National Science Day Quiz, Gymkhana, IIT Kharagpur}
+%   {Feb. 2021}
+\resumePOR{All India Rank 473}
+{ JEE Advanced - conducted by IIT Delhi, Jamshedpur}
+{Sep. 2020}
+\resumePOR{All India Rank 1176}
+{ JEE Mains - conducted by NTA, Jamshedpur}
+{Jan. 2020}
+% \resumePOR{Round 1 Qualified}
+%   { KVPY, IISER Kolkata, Kolkata}
+%   {Feb. 2019}
+\resumeSubHeadingListEnd
+% \vspace{-2mm}
+
+
+\section{Volunteer Experience}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{SWG Mentor}
+{ Students' Welfare Group, IIT Kharagpur, Kharagpur}
+{Dec. 2022 - Present}
+\resumeSubHeadingListEnd
+
+
+% \hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+
+
+%-------------------------------------------
+\end{document}

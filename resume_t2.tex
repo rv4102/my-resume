@@ -72,6 +72,13 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\honorsSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-15pt}
+}
+
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
 
@@ -113,12 +120,12 @@
      
     \resumeSubheading
     {Little Flower School}{Jamshedpur, India}
-    {Higher Secondary - ISC;  percentage: 96.25\%}{March 2018 - March 2020}
+    {Higher Secondary - ISC;  percentage: 96.25\%}{Mar 2018 - Mar 2020}
     {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Subjects:} Mathematics, Physics, Chemistry, Computer Sc. (Java), English }}}
      
     \resumeSubheading
     {Little Flower School}{Jamshedpur, India}
-    {Secondary - ICSE;  percentage: 95.40\%}{March 2007 - March 2018}
+    {Secondary - ICSE;  percentage: 95.40\%}{Mar 2007 - Mar 2018}
   \resumeSubHeadingListEnd
 
 
@@ -129,7 +136,7 @@
     \resumeSubheading{Students' Auditorium Management System (\textit{CS29202: Software Engineering})}{\href{https://github.com/rv4102/AudiBooking}{\faGithub}}
     {Front-end: HTML, CSS, Javascript \hspace{4mm} Backend: Flask \hspace{4mm} Database: SQLite}{Spring 2022}
     \resumeItemListStart
-      \resumeItem\textmd{An \textbf{auditorium management website} which runs on Localhost (127.0.0.1) and allows the user to maintain a database of shows to be screened along with providing functionality for seat booking.}
+      \resumeItem\textmd{An \textbf{auditorium management website} which runs on localhost (127.0.0.1) and allows the user to maintain a database of shows to be screened, along with providing functionality for seat booking.}
       \resumeItem\textmd{\textbf{OTP-based login} for users of the software is supported.}
     \resumeItemListEnd
 
@@ -137,9 +144,9 @@
     \resumeSubheading{KGP-miniRISC Processor (\textit{CS39001: Computer Organisation \& Architecture})}{\href{https://github.com/rv4102/CompOrg-Lab/tree/main/A6_KGP_miniRISC_Processor}{\faGithub}}
     {Tech: Verilog (HDL), AMD Xilinx ISE, Nexys Artix-7 FPGA}{Autumn 2022}
     \resumeItemListStart
-      \resumeItem\textmd{Developed a 32-bit word length \textbf{single-cycle} instruction execution unit. Hence there is no state and the design is purely combinational.}
+      \resumeItem\textmd{Developed a 32-bit word-length \textbf{single-cycle} instruction execution unit with a purely combinational design.}
       \resumeItem\textmd{Successfully dumped the bitstream onto a \textbf{Nexys A7 FPGA board} using Xilinx ISE and ran programs (written in assembly) such as sorting and linear search.}
-      \resumeItem\textmd{Clock frequency determined by the single longest instruction in the given ISA.}
+      % \resumeItem\textmd{Clock frequency determined by the single longest instruction in the given ISA.}
     \resumeItemListEnd
 
    
@@ -175,7 +182,7 @@
     \resumeItemListEnd
     
     \resumeSubheading{Research Intern | Dr. Debasish Chakraborty, ISRO}{Kharagpur, India}
-    {Topic: Semantic Segmentation of Remote Sensing Images \href{https://github.com/rv4102/qnet.git}{\faGithub}}{April 2022 - December 2022}
+    {Topic: Semantic Segmentation of Remote Sensing Images \href{https://github.com/rv4102/qnet.git}{\faGithub}}{Apr 2022 - Dec 2022}
     \resumeItemListStart
       \resumeItem\textmd{Tech: Python, TensorFlow, Keras, OpenCV}
       \resumeItem\textmd{Studied existing literature on CNNs, deep learning and their usage in the remote sensing context.}
@@ -215,28 +222,31 @@
 
 \vspace{0pt}
 \vspace{0pt}
+
 %-----------Awards-----------------
 \section{Honors and Awards}
-\begin{description}[font=$\bullet$]
-  \item {\textbf{All India Rank 473} among 160k candidates | \emph{JEE Advanced} - Sept 2020 }
-  \vspace{-3pt}
-  \item {\textbf{All India Rank 1176} among 1.12 million candidates | \emph{JEE Mains} - Jan 2020 }
-  \vspace{-3pt}
-  \item {\textbf{KVPY} Round 1 qualified | \emph{IISER, Kolkata} - 2019 }
-  \vspace{-3pt}
-  \item {\textbf{Inter IIT Tech Meet 11.0} Solo Gold Medalist | \emph{IIT, Kanpur} - Feb 2023}
-  \vspace{-3pt}
-  \item {\textbf{Optiver Winter School} participant | \emph{IIT, Delhi} - Jan 2023} % one of 300 selected from 3000 IITians
-  \vspace{-3pt}
-  \item {\textbf{ACM ICPC Preliminary Round} Rank 498 | \emph{IIT, Kharagpur} - 2022}
+\resumeSubHeadingListStart
+  \honorsSubheading{\textbf{All India Rank 473} among 160k candidates}{\emph{JEE Advanced}, Sept 2020}
+  % \vspace{-3pt}
+  \honorsSubheading{\textbf{All India Rank 1176} among 1.12 million candidates}{\emph{JEE Mains}, Jan 2020}
+  % \vspace{-3pt}
+  \honorsSubheading {\textbf{KVPY} round 1 qualified}{\emph{IISER Kolkata}, Feb 2019}
+  % \vspace{-3pt}
+  \honorsSubheading {\textbf{Inter IIT Tech Meet 11.0} solo gold medalist}{\emph{IIT Kanpur}, Feb 2023}
+  % \vspace{-3pt}
+  \honorsSubheading {\textbf{Optiver Winter School} participant}{\emph{IIT Delhi}, Jan 2023} % one of 300 selected from 3000 IITians
+  % \vspace{-3pt}
+  \honorsSubheading {\textbf{ACM ICPC Preliminary Round} rank 498}{\emph{IIT Kharagpur}, Nov 2022}
   % \vspace{-3pt}
   % \item {\textbf{National Science Day Quiz} First position | \emph{Gymkhana, IIT Kharagpur} - Feb 2021}
   % \vspace{-3pt}
   % \item {\textbf{Science of Paper Folding Quiz} Second position | \emph{Space Technology Students' Society, IIT Kharagpur} - Aug 2022}
 
-\end{description}
+\resumeSubHeadingListEnd
 
-\vspace{0pt}
+\vspace{5pt}
+\vspace{5pt}
+
 \section{Position of Responsibility}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -250,17 +260,17 @@
   \resumeSubHeadingListEnd
 \vspace{5pt}
 
-% \vspace{0pt}
-% \section{Volunteer Experience}
-%   \resumeSubHeadingListStart
-% \resumeSubheading
-%     {UG Mentor (Mentor-Mentee Programme)}{}
-%     {UG Council, Indian Institute of Technology Kharagpur}{}
+\vspace{0pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {SWG Mentor (Mentor-Mentee Programme)}{}
+    {Students' Welfare Group, Indian Institute of Technology Kharagpur}{}
 % \resumeSubheading
 %     {Active member under National Service Scheme (NSS Unit-5) IIT-Kgp}{Kharagpur, India}
 %     {Actively participated and co-ordinated in translating transcripts into native languages.}{Dec 2020 - May 2022}
-% \resumeSubHeadingListEnd
-% \vspace{5pt}
+  \resumeSubHeadingListEnd
+\vspace{5pt}
 
 
 \end{document}
