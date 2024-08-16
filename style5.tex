@@ -1,0 +1,294 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+% Obtained from Yashwant Krishna Pagoti
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\usepackage[colorlinks = true, linkcolor = purple ,urlcolor  = purple, citecolor = blue,a nchorcolor = blue]{hyperref}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{lato}
+
+% serif-
+
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\setlist[itemize]{leftmargin=0.22in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeWorkExpHeading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} $\mid$ {#2} $\mid$ \textit{#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemiii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=10pt, labelsep=5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand{\name}{Yashwant Krishna Pagoti} % Your Name
+\newcommand{\course}{Computer Science and Engineering (dual degree)} % Your Program
+\newcommand{\college}{Indian Institute of Technology Kharagpur}
+\newcommand{\phone}{8978895363} % Your Phone Number
+\newcommand{\emaila}{pagotiyashwantkrishna@gmail.com} %Email 1
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\huge \scshape \name} \\ \vspace{5pt}
+  \small \href{mailto:\emaila}{\faEnvelope \, \emaila} $|$
+  \href{https://github.com/geekyquentin}{\faGithub \, geekyquentin} $|$
+  \href{https://www.linkedin.com/in/yashwankrishna/}{\faLinkedin \, yashwankrishna} $|$
+  \href{https://stackoverflow.com/users/17235431/geeky-quentin}{\faStackOverflow \, geeky-quentin} $|$
+  \href{tel:+918978895363}{\faPhone \, +91 8978895363}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\college}{Kharagpur, India}
+{\course} {2020 -- 2025}
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+\resumeSubHeadingListStart
+
+\resumeWorkExpHeading
+{Sprinklr, Inc.}{Gurugram, India}{Product Engineering Intern}
+{May 2024 -- July 2024}
+\resumeItemListStart
+\resumeItem{Developed an end-to-end \textbf{Retrieval-Augmented Generation (RAG) pipeline} to extract and organize information from complex documents.}
+\resumeItem{Extracted different modalities, including \textbf{text}, \textbf{tables}, and \textbf{images}, from PDFs and extracted \textbf{structured data from images} using vision LLMs.}
+\resumeItem{Created \textbf{descriptive metadata} for indexing text/image chunks using advanced language models, enhancing data retrieval and searchability.}
+\resumeItem{Explored and implemented various chunking mechanisms and utilized \textbf{FAISS vector store} for effective data indexing and retrieval.}
+\resumeItemListEnd
+
+\resumeWorkExpHeading
+{Goldenflitch Studios}{Remote}{Unity Consultant}
+{August 2023 -- November 2023}
+\resumeItemListStart
+\resumeItem{Conducted a comparative analysis and \textbf{SWOT} evaluation of over \textbf{7+} game engines, assessing them against industry-relevant parameters.}
+\resumeItem{Addressed custom client requirements, including research on \textbf{dynamic mesh generation}, \textbf{asset acquisition}, and advising on \textbf{Unity licensing}.}
+\resumeItem{Integrated \textbf{GraphQL} API into Unity, overcoming limitations in \textbf{Unity WebGL} through custom WebSocket development in JavaScript.}
+\resumeItem{Contributed to the development of a motor and conveyor belt model adhering to realistic standards, allowing \textbf{dynamic mesh generation during runtime} for user flexibility and \textbf{mirroring a digital twin} of a real factory setup.}
+\resumeItemListEnd
+
+\resumeWorkExpHeading
+{K12 Techno Services Pvt. Ltd.}{Remote}{Game Development Intern}
+{June 2022 -- August 2022}
+\resumeItemListStart
+\resumeItem{Developed a space shooter game using \textbf{MVC architecture patterns} and \textbf{state machines} to enhance code readability and maintainability.}
+\resumeItem{Collaborated with a team of \textbf{7} members to create an engaging \textbf{endless runner game in Unity 3D}, utilizing \textbf{GitLab} for version control.}
+\resumeItem{Coordinated with the team lead and designed \textbf{5+} 3D environments with the provided assets.}
+\resumeItem{Optimized memory management by implementing \textbf{addressable assets}, resulting in \textbf{improved run-time memory utilization}.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{Attacks and Countermeasures for Secure Implantable Medical Devices}{August 2023 -- April 2024}
+\resumeItemListStart
+\resumeItem{Developed and executed a software simulation of \textbf{Implantable Cardioverter Defibrillators (ICDs)} using \textbf{React} and \textbf{SCSS} to accurately model device behaviour and potential vulnerabilities, enabling a thorough demonstration of data manipulation attacks.}
+\resumeItem{Simulated over \textbf{30+} data manipulation attacks on \textbf{ICDs} to assess their impact on patient safety, providing insights into their vulnerabilities.}
+\resumeItem{Implemented \textbf{Rhythm ID algorithm} within ICDs to efficiently detect and respond to cardiac arrhythmias, particularly tachycardia.}
+\resumeItem{Employed a black-box approach to \textbf{reverse engineer} the communication protocol between the ICD and device programmer, utilizing \textbf{MATLAB} to develop receiver and transmitter programs to intercept the communication channel with a \textbf{USRP device} and \textbf{antennas}.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Fast and Efficient Semantic Image Retrieval}{January 2023 -- April 2023}
+\resumeItemListStart
+\resumeItem{Implemented a semantic image retrieval system utilizing \textbf{hierarchy-based semantic embeddings} trained on the \textbf{CIFAR-100} dataset.}
+\resumeItem{Employed \textbf{deep hashing} for generating compact representations of input images and enhanced it by utilizing \textbf{floating-point hashing}.}
+\resumeItem{Utilized \textbf{AlexNet} architecture for feature extraction, followed by a hashing layer to create compact, continuous representations.}
+\resumeItem{Created the frontend using \textbf{Streamlit}, providing users with an interface to upload images and obtain semantically similar image results.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------COMPETITIONS-----------
+\section{AWARDS AND ACHIEVEMENTS}
+\resumeItemListStart
+\resumeSubItem{Secured an \textbf{All India Rank 1597} in \textbf{JEE Advanced 2020} among \textbf{1,50,000} and an \textbf{AIR 953} in \textbf{JEE Main 2020} among \textbf{1.5 million} candidates.}
+\resumeSubItem{Achieved a rank of \textbf{287} in \textbf{TS EAMCET-2020}, a state-level entrance exam with participation from over \textbf{1,20,000} candidates.}
+\resumeSubItem{Played a key role in contributing to our team's success in winning the \textbf{bronze medal} at the \textbf{Open Soft General Championship 2023}.}
+\resumeSubItem{Earned \textbf{student membership} in the esteemed \textbf{Institute of Actuaries of India} by qualifying the \textbf{ACET} January 2021 Examination.}
+\resumeItemListEnd
+\vspace{-4pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS AND EXPERTISE}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%         \textbf{Programming Languages}{: JavaScript, Java, C/C++, Python} \\
+%         \textbf{Frontend Web Libraries/Frameworks}{: Typescript, ReactJS, NextJS, Node.js} \\
+%         \textbf{Backend Web Libraries/Frameworks}{: NodeJS, Flask}\\
+%         \textbf{Databases}{: MySQL, PostgreSQL, MongoDB}\\
+%         \textbf{Systems/Platforms}{: Git/GitHub, Linux} \\
+%         }}
+% \end{itemize}
+
+\begin{tabular}{ @{\small} >{\small}l @{\hspace{1ex}} l }
+  \textbf{Languages \& Frontend Frameworks:} & \small{JavaScript, Typescript, Sass, C/C++, C\#, Java, Python, Lua, Bash, ReactJS, NextJS, Redux, Sanity.io} \\
+  \textbf{AI \& Machine Learning:}           & \small{LangChain, LlamaIndex, LLM Integration, OpenAI GPT Models, Groq, Prompt Engineering}                  \\
+  \textbf{Databases \& Backend Frameworks:}  & \small{PostgreSQL, MongoDB, MySQL, GraphQL, Neo4j, Cypher, Node.js, Express, Django}                         \\
+  \textbf{Platforms \& Other Tools:}         & \small{Unity, Unity 2D, Blender, Linux, Git/Github, GitLab, Docker, Photosthop, Illustrator, Figma}          \\
+\end{tabular}
+\vspace{-7pt}
+
+
+%-----------Position of Responsibility-----------
+\section{VOLUNTARY CONTRIBUTIONS}
+\resumeSubHeadingListStart
+
+\resumeWorkExpHeading
+{Computer Graphics Society (CGS)}{IIT Kharagpur}{Head of Web Development}
+{September 2022 -- September 2023}
+\resumeItemListStart
+\resumeItem{Designed and developed the \textbf{official website of CGS} using \textbf{HTML}, \textbf{CSS}, \textbf{React} for the frontend, and \textbf{Sanity.io} for the backend.}
+\resumeItem{Mentored and guided \textbf{14 junior members} of the society by assigning tasks, evaluating progress, and supporting throughout their journey.}
+\resumeItem{Actively contributed to the successful organization of \textbf{Respawn Game Jam 2022}, hosted by \textbf{IITKGP}, \textbf{IITK}, and \textbf{IITG}: designed the \textbf{event logo}, created visually appealing thumbnails, and edited videos for the \textbf{Unity workshop series} on YouTube.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Stack Overflow Community Engagement}{May 2022 -- present}
+\resumeItemListStart
+\resumeItem{Accumulated an impressive reputation of \textbf{2,500} and earned \textbf{2 gold}, \textbf{9 silver}, and \textbf{31 bronze} badges over \textbf{3 years} of community engagement.}
+\resumeItem{Answered \textbf{182} questions, reaching an audience of more than \textbf{61,000 people}, actively contributing to the Stack Overflow knowledge base.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Activities \& Scholastic Achievements-----------
+% \section{Extra-curriculars}
+% \resumeItemListStart
+% \resumeItem{}
+
+%-------------------------------------------
+\end{document}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+
+% TODO: "developed" and "implemented" are repeated. Find synonyms for them.

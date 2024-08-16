@@ -1,0 +1,365 @@
+%-------------------------
+% Resume in Latex
+% Author : Rushil Venkateswar
+% License : MIT
+%------------------------
+
+% Obtained from Kushaz Sehgal
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[1]{
+  \item[]\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Rushil Venkateswar} \\ \vspace{1.5pt}
+    % AB204 LBS Hall, IIT Kharagpur, West Bengal, 721302 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-8789309659 ~ \href{mailto:x=rushilv14@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{rushilv14@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/rushilv4102/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/rushilv4102}}  ~
+    \href{https://github.com/rv4102}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/rv4102}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology, Kharagpur}
+      {Dec 2020 -- May 2025}
+      {Integrated Bachelors and Masters of Technology in Computer Science}{8.71/10}
+    
+    \resumeSubheading
+      {Little Flower School}
+      {Apr 2007 -- Apr 2020}
+      {Indian School Certificate Examination (ISC)}
+      {96.25\%}
+  \resumeSubHeadingListEnd
+  \vspace{-8pt}
+
+%-----------Awards /  Achievements--
+\section{Awards and Achievements}
+    \resumeItemListStart
+    \itemsep0em 
+        \resumeItem{Achieved a peak rating of \textbf{1547 (Specialist)} on \textbf{Codeforces} under the handle \textbf{rv4102}}
+        \resumeItem{Secured an \textbf{AIR 473} in Joint Entrance Exam Advanced 2020 and an \textbf{AIR 1176} in Joint Entrance Exam Mains 2020}
+        \resumeItem{Nominated for best \textbf{Bachelor Thesis Award} by Department of Computer Science and Engineering, IIT Kharagpur}
+        \resumeItem{Selected for \textbf{Optiver Winter School}, conducted by IIT Delhi}
+    \resumeItemListEnd
+    \vspace{-10pt}
+  
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sprinklr}{May 2024 -- Jul 2024}
+      {Product Engineering Intern}{Gurugram, India}
+      \resumeItemListStart
+        \resumeItemNoBullet{\textbf{Objective}: Develop tools to create a flowchart from a query and to summarize a flowchart}
+        \resumeItem{Ensured \textbf{structured output generation} from LLMs by creating \textbf{Pydantic} based class definition to model the flowchart}
+        \resumeItem{Utilized \textbf{prompt engineering} \& \textbf{OpenAI function calling} through Instructor package to generate flowcharts from queries}
+        \resumeItem{Deployed the tools using \textbf{Tornado} and \textbf{Docker}, empowering the product team to reduce flowchart creation time by over \textbf{60\%}}
+      \resumeItemListEnd
+    
+
+    \resumeSubheading
+      {Stanford University -- Prof. Pascal Geldsetzer}{May 2023 -- Aug 2023}
+      {Research Intern}{Remote}
+      \resumeItemListStart
+        \resumeItemNoBullet{\textbf{Objective}: Estimate key indicators of health status in low income countries using satellite imagery}
+        \resumeItem{Trained a \textbf{Boosting on Error} ensemble model using \textbf{Random Forest} \& \textbf{XGBoost} at 4 levels, achieving MCRMSE of 10.75918}
+        \resumeItem{Utilized \textbf{Dask} package to load an \textbf{8GB} dataset \& performed feature selection using Random Forest's \textbf{feature importance}}
+        % \resumeItem{Selected to participate in a \textbf{Kaggle competition} hosted by \textbf{Stanford University}, finishing at \textbf{first position} out of 30+ teams}
+      \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {ISRO -- Dr. Debasish Chakraborty}{Apr 2022 -- Dec 2022}
+    %   {Research Intern}{Remote}
+    %   \resumeItemListStart
+    %     \resumeItemNoBullet{\textbf{Objective}: Develop an efficient and performant CNN model to be trained on small datasets}
+    %     \resumeItem{Built \textbf{Tensorflow} model with \textbf{depth-wise separable convolutional layers} which \textbf{outperforms} a \textbf{standard U-Net} model}
+    %     \resumeItem{Utilized a novel \textbf{Unified Focal Loss} and created a \textbf{Dataloader} for an \textbf{efficient input pipeline} to work with geospatial images}
+    %     % \resumeItem{Developed \textbf{TensorFlow} scripts to \textbf{create a dataloader} for an \textbf{efficient input pipeline} and to perform \textbf{inference} on \textbf{variable-sized} images}
+    %   \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {IIT Kharagpur -- Prof. Partha Pratim Das}{May 2022 -- Jul 2022}
+    %   {Research Intern}{Remote}
+    %   \resumeItemListStart
+    %     \resumeItemNoBullet{\textbf{Objective}: Development of a python ontology evaluation metric and expansion of code intents}
+    %     \resumeItem{Devised an evaluation metric for Python Ontologies by using a heuristic of \textbf{n-gram matches} and \textbf{fuzzy matches} of ontology keywords}
+    %     \resumeItem{Implemented \textbf{Frequent Itemset Mining} for Query Expansion using apriori algorithm effectively \textbf{improving model accuracy by 20\%}}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Message Oriented TCP} $|$ \emph{Computer Networks Lab}}{Feb 2023 - Mar 2023}
+        \resumeItemListStart
+          \resumeItemNoBullet{\textbf{Objective}: To build a message oriented TCP Protocol using socket programming}
+          \resumeItem{Created a library guaranteeing \textbf{reliable, in-order} delivery of \textbf{messages} up to \textbf{5000 bytes} using standard TCP sockets}
+          \resumeItem{Utilized \textbf{POSIX threads} \& \textbf{mutex locks/conditional signals} to ensure \textbf{synchronised access} to global buffers for messages}
+          % \resumeItem{Ensured that all \textbf{global data structures} were cleared on closure of socket and performed tests using simple \textbf{client/server programs}}
+        \resumeItemListEnd
+        \vspace{-13pt}
+
+      \resumeProjectHeading
+        {\textbf{Linux Shell Development} $|$ \emph{Operating Systems Lab}}{Jan 2023 - Feb 2022}
+        \resumeItemListStart
+          \resumeItemNoBullet{\textbf{Objective}: To create a shell that will run as an application program on top of the Linux kernel}
+          \resumeItem{Effectively managed \textbf{process groups} and monitored child processes using \textbf{signal handlers}, ensuring \textbf{synchronized execution}}
+          % \resumeItem{Designed a CPU usage heuristic to detect \textbf{fork bomb} based \textbf{malware} and utilized the \textbf{flock syscall} to ensure \textbf{exclusive access} to files}
+          \resumeItem{Implemented features such as \textbf{background execution, pipelining, wildcard handling}, and \textbf{command history navigation}}
+        \resumeItemListEnd 
+        \vspace{-13pt}
+
+      \resumeProjectHeading
+        {\textbf{Hospital Management System} $|$ \emph{Database Management Lab}}{Feb 2023 - Mar 2023}
+        \resumeItemListStart
+          \resumeItemNoBullet{\textbf{Objective}: To design a web application for a hospital management system}
+          \resumeItem{Developed a \textbf{python flask} based web application to connect \textbf{MySQL} to a \textbf{bootstrap front-end} with \textbf{jinja templates}}
+          \resumeItem{Implemented \textbf{user session management} using \textbf{flask-login} \& provided \textbf{access control} through \textbf{python decorator functions}}
+          % \resumeItem{Modelled entities in a real-life hospital using a \textbf{relational database} and its \textbf{schema} with support for querying \& storage of patient data}
+        \resumeItemListEnd 
+        % \vspace{-13pt}
+
+        % \resumeProjectHeading
+        % {\textbf{KGP-miniRISC Processor} $|$ \emph{Computer Organisation \& Architecture}}{Oct 2022 -- Nov 2022}
+        % \resumeItemListStart
+        %   \resumeItemNoBullet{\textbf{Objective}: Design a 32-bit word-length single-cycle instruction execution unit}
+        %   \resumeItem{Developed a 32-bit word-length \textbf{single-cycle} instruction execution unit with a purely combinational design}
+        %   \resumeItem{Successfully dumped the bitstream onto a \textbf{Nexys A7 FPGA board} using Xilinx ISE and ran programs (written in assembly) such as sorting and linear search}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Students' Auditorium Management System} $|$ \emph{Software Engineering}}{Feb 2022 -- Apr 2022}
+        % \resumeItemListStart
+        %   \resumeItem{An \textbf{auditorium management website} which runs on localhost (127.0.0.1) and allows the user to maintain a database of shows to be screened, along with providing functionality for seat booking}
+        %   \resumeItem{\textbf{OTP-based login} for users of the software is supported}
+        % \resumeItemListEnd
+
+        % \resumeProjectHeading
+        % {\textbf{Instance Segmentation and Detection} $|$ \emph{Software Engineering}}{Jan 2022 -- Feb 2022}
+        % \resumeItemListStart
+        %   \resumeItem{Developed a \textbf{Tkinter based GUI} to display bounding boxes or segmentation masks for the image selected}
+        %   \resumeItem{Used a pre-trained MaskRCNN model from Pytorch library to generate \textbf{masks} and \textbf{bounding boxes} for a given image and used \textbf{matplotlib} to plot them}
+        %   \resumeItem{Created a \textbf{python package} from source code}
+        % \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Competitions and Conferences}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Inter IIT Tech Meet 11.0 - Gold Medalist}{Jan 2023 -- Feb 2023}
+      {Team Member}{ISRO -- Mid Prep Event}
+      \resumeItemListStart
+      % \itemsep0em
+        \resumeItemNoBullet{\textbf{Objective}: Create a high-resolution map of the Moon using a pipeline of Image Super-Resolution models}
+        \resumeItem{Proposed a novel \textbf{GAN-based} architecture with \textbf{adversaries} for ensuring \textbf{accurate reconstruction} of \textbf{craters} and \textbf{hills}}
+        \resumeItem{Achieved a competitive \textbf{SSIM} of \textbf{0.794} while increasing spatial resolution from \textbf{5m/pixel} to \textbf{30 cm/pixel}, a \textbf{16x magnification}}
+        % \resumeItem{Created a pipeline capable of \textbf{tiling} and super-resolving an image using \textbf{Lunar T-GAN, HAT, RealESRGAN} and \textbf{sharpening} algorithms}
+        % \resumeItem{Developed a \textbf{Lunar Atlas} by correcting coordinates \& \textbf{stitching} together individual image patches from the Chadrayaan-2 TMC payload}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Inter IIT Tech Meet 12.0 - Gold Medalist}{Sep 2023 -- Dec 2023}
+      {Team Captain}{DevRev -- High Prep Event}
+      \resumeItemListStart
+        \resumeItemNoBullet{\textbf{Objective}: Create an efficient tool-use LLM which matches closed-source LLMs in performance}
+        % \resumeItem{Secured \textbf{solo gold} for proposing \textbf{RTaC} pipeline for tool usage, achieving \textbf{competitive performance} with \textbf{GPT-4} under the same framework}
+        \resumeItem{Employed \textbf{PEFT} \& \textbf{LoRA} to fine-tune LLMs like \textbf{DeepSeek} \& \textbf{Code Llama}, utilizing function calls, reducing costs by \textbf{30\%}}
+        \resumeItem{\textbf{Created synthetic datasets} for tooling scenarios, including \textbf{dynamic tooling}, mathematical, conditional and iterative tooling}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+      % \begin{multicols}{4}
+      %     \begin{itemize}[itemsep=-5pt, parsep=3pt]
+      %         \item\small Data Structures
+      %         \item Computer Architecture
+      %         \item Operating Systems
+      %         \item Database Management
+      %         \item Computer Networks
+      %         \item Distributed Systems
+      %         \item Systems Programming
+      %         \item Probability and Statistics
+      %         \item Machine Learning
+      %         \item Deep Learning
+      %         \item NLP
+      %         \item Algorithms - I/II
+      %     \end{itemize}
+      % \end{multicols}
+      % \vspace*{2.0\multicolsep}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+        \textbf{Theory + Lab}{: Operating Systems, Computer Networks, Database Management Systems, Computer Organisation \& Architecture, Compilers, Software Engineering, Programming \& Data Structures, Algorithms-I} \\
+        \textbf{Theory}{: Deep Learning, Machine Learning, Probability \& Statistics, Statistical Inference, Discrete Structures, Linear Algebra} \\
+      }}
+    \end{itemize}
+    \vspace{-16pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, LaTeX, SQL, Bash, MIPS, Assembly} \\
+     \textbf{Skills}{: Systems Programming, Socket Programming, Data Science, Object Oriented Design} \\
+     \textbf{Technologies/Frameworks}{: Keras, Tensorflow, NumPy, Pandas, Flask, scikit-learn, Git, C++ STL, C pthreads} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+  \resumeSubHeadingListStart
+    % \resumeSubheading{Business Club}{Dec 2020 -- Sep 2021}{Associate Member}{IIT Kharagpur}
+    %   \resumeItemListStart
+    %     \resumeItem{Authored a \textbf{Whitepaper on XGBoost} {\href{https://drive.google.com/file/d/1e6BMMkBewwBbj1vg58pLpTyw0jNMvRba/view?usp=sharing}{\faDropbox}}}
+    %     \resumeItem{Conducted a webinar on Cryptocurrency with Dr. Akshat Shrivastava as the guest lecturer}
+    %   \resumeItemListEnd
+    
+    \resumeSubheading{Students' Welfare Group}{Dec 2022 -- Present}{SWG Mentor}{IIT Kharagpur}
+      \resumeItemListStart
+        \resumeItem{Mentoring three juniors on various academic and non-academic activities and how to work towards achieving their goals}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+\end{document}
